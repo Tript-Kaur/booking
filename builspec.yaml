@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+    build:
+        commands:
+          - echo Entered the build phases
+          - mvn clean package
+    post_build:
+        commands:
+          - echo Build completed Successfully
+artifacts:
+    files:
+      - target/SpringBootApigateWay-0.0.1-SNAPSHOT.jar
+    discard-paths: yes      
+    
